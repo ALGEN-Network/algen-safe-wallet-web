@@ -7309,6 +7309,13 @@ ajv@^8.0.0, ajv@^8.11.0, ajv@^8.6.0, ajv@^8.9.0:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
+algen-safe-deployments@1.36.0:
+  version "1.36.0"
+  resolved "https://registry.npmjs.org/algen-safe-deployments/-/algen-safe-deployments-1.36.0.tgz#fb904f57737989bebef98b250c4de8940f3c4e83"
+  integrity sha512-BUOFUMziHROQH5ZKvx2Tu+b5obY3630H4iYatUKFnR0Xzm2539iwYkF3smYir9xH/BJ7rYQWvFkIcfOB+STxkg==
+  dependencies:
+    semver "^7.6.0"
+
 ansi-colors@^4.1.1:
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-4.1.3.tgz#37611340eb2243e70cc604cad35d63270d48781b"

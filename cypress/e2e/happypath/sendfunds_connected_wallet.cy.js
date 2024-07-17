@@ -13,6 +13,7 @@ import { createSafes } from '../../support/api/utils_protocolkit'
 import { contracts, abi_qtrust, abi_nft_pc2 } from '../../support/api/contracts'
 import { getSafes, CATEGORIES } from '../../support/safes/safesHandler.js'
 import * as wallet from '../../support/utils/wallet.js'
+import { ContractNetworks } from '../../../src/config/constants'
 
 const transferAmount = '1'
 
@@ -65,8 +66,8 @@ describe('Send funds with connected signer happy path tests', { defaultCommandTi
     outgoingSafeAddress = safesData.SEP_FUNDS_SAFE_6.substring(4)
 
     const safeConfigurations = [
-      { ethAdapter: ethAdapterOwner1, safeAddress: outgoingSafeAddress },
-      { ethAdapter: ethAdapterOwner2, safeAddress: outgoingSafeAddress },
+      { ethAdapter: ethAdapterOwner1, safeAddress: outgoingSafeAddress, contractNetworks: ContractNetworks },
+      { ethAdapter: ethAdapterOwner2, safeAddress: outgoingSafeAddress, contractNetworks: ContractNetworks },
     ]
 
     safes = await createSafes(safeConfigurations)
